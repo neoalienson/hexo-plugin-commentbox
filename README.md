@@ -19,6 +19,16 @@ commentbox:
     project_id: <your project id>
 ```
 
+### Disable comment in some of your post or page
+
+Comment is enable to all pages by default. You can disable from your header 
+
+```
+---
+comments: false
+---
+```
+
 ## Contribution
 
 Keep it simple and stupid for now. Any pull request is welcomed and will reviewed.

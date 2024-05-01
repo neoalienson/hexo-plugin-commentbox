@@ -1,16 +1,21 @@
 /* global hexo */
 hexo.extend.filter.register('after_post_render', function (data) {
-    var cfg = hexo.config.commentbox;
-    if (cfg) {
-        if (!hexo.config.commentbox.enable) {
+    const { config } = this;
+    if (config) {
+        if (!config.commentbox.enable) {
             return;
         }
 
-        if (!hexo.config.commentbox.project_id) {
+        if (!config.commentbox.project_id) {
             console.log('ERROR. project id is required for commentbox');
         }
 
-        data.content += buildJS(cfg);
+        if (!data.comments) {
+            // comment is disabled
+            return;
+        }
+
+        data.content += buildJS(config);
     };
 });
 
