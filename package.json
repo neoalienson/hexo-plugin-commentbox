@@ -1,0 +1,31 @@
+{
+    "name": "hexo-plugin-commentbox",
+    "version": "0.1.0",
+    "description": "Integrate your Hexo blog post with commentbox.io, a comment service",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest",
+        "release": "standard-version",
+        "release:minor": "standard-version --release-as minor",
+        "release:patch": "standard-version --release-as patch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/neoalienson/hexo-plugin-commentbox.git"
+    },
+    "keywords": [
+        "hexo",
+        "comments"
+    ],
+    "author": "neo@01man.com",
+    "license": "Apache 2.0",
+    "bugs": {
+        "url": "https://github.com/neoalienson/hexo-plugin-commentbox/issues"
+    },
+    "homepage": "https://github.com/neoalienson/hexo-plugin-commentbox",
+    "devDependencies": {
+        "jest": "^29.7.0",
+        "node-html-parser": "^6.1.13",
+        "standard-version": "^9.5.0"
+    }
+}
